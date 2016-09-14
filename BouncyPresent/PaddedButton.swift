@@ -25,8 +25,8 @@ class PaddedButton: UIButton {
   @IBInspectable
   var horizontalPadding: CGFloat = 20.0
 
-  override func intrinsicContentSize() -> CGSize {
-    var size = super.intrinsicContentSize()
+  override var intrinsicContentSize : CGSize {
+    var size = super.intrinsicContentSize
     size.height += verticalPadding
     size.width  += horizontalPadding
     return size

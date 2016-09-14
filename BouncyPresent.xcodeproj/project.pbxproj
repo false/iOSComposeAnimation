@@ -11,7 +11,6 @@
 		22CF1CA219AFB208002D4F59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF1CA119AFB208002D4F59 /* ViewController.swift */; };
 		22CF1CA519AFB208002D4F59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CF1CA319AFB208002D4F59 /* Main.storyboard */; };
 		22CF1CA719AFB208002D4F59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22CF1CA619AFB208002D4F59 /* Images.xcassets */; };
-		22CF1CB319AFB208002D4F59 /* BouncyPresentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF1CB219AFB208002D4F59 /* BouncyPresentTests.swift */; };
 		22CF1CBD19AFB493002D4F59 /* PaddedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF1CBC19AFB493002D4F59 /* PaddedButton.swift */; };
 		22CF1CBF19AFB5A2002D4F59 /* OverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF1CBE19AFB5A2002D4F59 /* OverlayViewController.swift */; };
 		22CF1CC319AFB90A002D4F59 /* OverlayPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF1CC219AFB90A002D4F59 /* OverlayPresentationController.swift */; };
@@ -20,16 +19,6 @@
 		22EDB8551AD68946008515E4 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EDB8531AD68946008515E4 /* Launch Screen.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		22CF1CAD19AFB208002D4F59 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22CF1C9219AFB208002D4F59 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CF1C9919AFB208002D4F59;
-			remoteInfo = BouncyPresent;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		22CF1C9A19AFB208002D4F59 /* BouncyPresent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BouncyPresent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CF1C9E19AFB208002D4F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,7 +26,6 @@
 		22CF1CA119AFB208002D4F59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22CF1CA419AFB208002D4F59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22CF1CA619AFB208002D4F59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		22CF1CAC19AFB208002D4F59 /* BouncyPresentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BouncyPresentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CF1CB119AFB208002D4F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22CF1CB219AFB208002D4F59 /* BouncyPresentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncyPresentTests.swift; sourceTree = "<group>"; };
 		22CF1CBC19AFB493002D4F59 /* PaddedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddedButton.swift; sourceTree = "<group>"; };
@@ -50,13 +38,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		22CF1C9719AFB208002D4F59 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22CF1CA919AFB208002D4F59 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				22CF1C9A19AFB208002D4F59 /* BouncyPresent.app */,
-				22CF1CAC19AFB208002D4F59 /* BouncyPresentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,24 +143,6 @@
 			productReference = 22CF1C9A19AFB208002D4F59 /* BouncyPresent.app */;
 			productType = "com.apple.product-type.application";
 		};
-		22CF1CAB19AFB208002D4F59 /* BouncyPresentTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22CF1CB919AFB208002D4F59 /* Build configuration list for PBXNativeTarget "BouncyPresentTests" */;
-			buildPhases = (
-				22CF1CA819AFB208002D4F59 /* Sources */,
-				22CF1CA919AFB208002D4F59 /* Frameworks */,
-				22CF1CAA19AFB208002D4F59 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				22CF1CAE19AFB208002D4F59 /* PBXTargetDependency */,
-			);
-			name = BouncyPresentTests;
-			productName = BouncyPresentTests;
-			productReference = 22CF1CAC19AFB208002D4F59 /* BouncyPresentTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -189,15 +151,13 @@
 			attributes = {
 				LastSwiftMigration = 0730;
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = ShinobiControls;
 				TargetAttributes = {
 					22CF1C9919AFB208002D4F59 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					22CF1CAB19AFB208002D4F59 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 22CF1C9919AFB208002D4F59;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -215,7 +175,6 @@
 			projectRoot = "";
 			targets = (
 				22CF1C9919AFB208002D4F59 /* BouncyPresent */,
-				22CF1CAB19AFB208002D4F59 /* BouncyPresentTests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,13 +187,6 @@
 				22CF1CA519AFB208002D4F59 /* Main.storyboard in Resources */,
 				22CF1CA719AFB208002D4F59 /* Images.xcassets in Resources */,
 				22EDB8551AD68946008515E4 /* Launch Screen.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22CF1CAA19AFB208002D4F59 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,23 +207,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22CF1CA819AFB208002D4F59 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22CF1CB319AFB208002D4F59 /* BouncyPresentTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		22CF1CAE19AFB208002D4F59 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22CF1C9919AFB208002D4F59 /* BouncyPresent */;
-			targetProxy = 22CF1CAD19AFB208002D4F59 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		22CF1CA319AFB208002D4F59 /* Main.storyboard */ = {
@@ -306,8 +242,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -316,6 +254,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -350,8 +289,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -359,6 +300,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -368,6 +310,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -381,6 +324,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shinobicontrols.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -392,42 +336,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shinobicontrols.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		22CF1CBA19AFB208002D4F59 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BouncyPresentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shinobicontrols.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BouncyPresent.app/BouncyPresent";
-			};
-			name = Debug;
-		};
-		22CF1CBB19AFB208002D4F59 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BouncyPresentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shinobicontrols.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BouncyPresent.app/BouncyPresent";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -448,15 +357,6 @@
 			buildConfigurations = (
 				22CF1CB719AFB208002D4F59 /* Debug */,
 				22CF1CB819AFB208002D4F59 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		22CF1CB919AFB208002D4F59 /* Build configuration list for PBXNativeTarget "BouncyPresentTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22CF1CBA19AFB208002D4F59 /* Debug */,
-				22CF1CBB19AFB208002D4F59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

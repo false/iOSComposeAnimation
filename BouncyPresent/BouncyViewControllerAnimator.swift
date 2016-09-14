@@ -19,34 +19,34 @@ import UIKit
 class BouncyViewControllerAnimator : NSObject, UIViewControllerAnimatedTransitioning {
     var isPresenting: Bool = false
     
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.8
     }
     
-    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
+    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
-        let fromView = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)?.view
-        let toView = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)?.view
+        let fromView = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)?.view
+        let toView = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)?.view
         
         var center:CGPoint?
         
         if isPresenting {
             center = toView!.center
-            toView!.center = CGPointMake(center!.x, toView!.bounds.size.height)
-            transitionContext.containerView()!.addSubview(toView!)
+            toView!.center = CGPoint(x: center!.x, y: toView!.bounds.size.height)
+            transitionContext.containerView.addSubview(toView!)
         } else {
-            center = CGPointMake(toView!.center.x, toView!.bounds.size.height + fromView!.bounds.size.height)
+            center = CGPoint(x: toView!.center.x, y: toView!.bounds.size.height + fromView!.bounds.size.height)
         }
         
-        UIView.animateWithDuration(self.transitionDuration(transitionContext),
+        UIView.animate(withDuration: self.transitionDuration(using: transitionContext),
             delay: 0, usingSpringWithDamping: 300, initialSpringVelocity: 10.0, options: [],
             animations: {
                 if self.isPresenting {
                     toView!.center = center!
-                    fromView!.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.92, 0.92)
+                    fromView!.transform = CGAffineTransform.identity.scaledBy(x: 0.92, y: 0.92)
                 } else {
                     fromView!.center = center!
-                    toView!.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.0, 1.0)
+                    toView!.transform = CGAffineTransform.identity.scaledBy(x: 1.0, y: 1.0)
                 }
             }, completion: {
                 _ in
